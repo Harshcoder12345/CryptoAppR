@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router';
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
-import { getTrendingCoins } from '../features/coin/CoinSlice';
+import { getTrendingCoins } from '../features/coin/coinslice';
 import Form from '../components/Form';
 
 const Home = () => {

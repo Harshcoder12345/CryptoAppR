@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getSearchCoin } from '../features/coin/CoinSlice'
+import { getSearchCoin } from '../features/coin/coinslice'
 import { Navigate, useNavigate } from 'react-router'
 
 

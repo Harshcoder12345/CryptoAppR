@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router'
-import { getCoinDetail } from '../features/coin/CoinSlice'
+import { getCoinDetail } from '../features/coin/coinslice'
 import { addcart } from '../features/cart/cartSlice'
 
 const CoinDetails = () => {
