@@ -28,7 +28,7 @@ useEffect(()=> {
     <div>
       
         <div className= {theme ? 'text-white mx-auto text-center' : 'text-slate-900 mx-auto text-center' }>
-        <div className=' pt-[150px] pb-[20px] text-6xl font-bold text-center' >The World’s Premier
+        <div className='pt-[50px] md:pt-[150px] pb-[20px] text-6xl font-bold text-center' >The World’s Premier
         Crypto Trading Platform</div>
         <div className='hidden  md:flex flex-col   '>
         <div> Search Bitcoin, Ethereum, and 400 crypto on You fingertips</div>

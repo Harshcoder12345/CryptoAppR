@@ -8,7 +8,7 @@ const Cart = () => {
 const {mycart} = useSelector(state => state.cart)
 
 
-
+const totalBill = mycart.reduce((total, eachcart)=>{return total +(eachcart.qty * eachcart.market_data.current_price.inr) },0 )
 
   return (
     <div className='flex flex-col items-center' >
@@ -26,11 +26,13 @@ const {mycart} = useSelector(state => state.cart)
 
 
 
+
 </div>
         <div className='w-[100%] md:w-[30%] border border-gray-500 p-5 rounded-md mx-2'>
           <ul>
-            <li className='font-bold text-xl text-gray-500'>Your Bill : {mycart.reduce((a,b)=> a+b.market_data.current_price.inr,0)}</li>
+            <li className='font-bold text-xl text-gray-500'>Your Bill : {totalBill}</li>
             <li  className='font-bold text-xl text-gray-500' >Your Items : {mycart.length}</li>
+            
             {/* <li  className='font-bold text-xl text-gray-500'>Total Amount : $10000</li> */}
             <li className='w-[100%]'><button className='p-3 w-[100%] rounded-md font-bold text-gray-300 bg-green-700 my-3'>Pay Now</button></li>
           </ul>
