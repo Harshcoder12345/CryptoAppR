@@ -9,7 +9,10 @@ const Home = () => {
 
   const {theme} = useSelector(state => state.theme)
 
-const {isLoading, isError, trendingCoins} = useSelector(state => state.coin)
+const { trendingCoins} = useSelector(state => state.coin)
+// console.log(trendingCoins);
+
+
 const dispatch = useDispatch()
 
 useEffect(()=> {
