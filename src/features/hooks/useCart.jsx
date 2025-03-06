@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { TbRuler2 } from 'react-icons/tb'
 import { useSelector } from 'react-redux'
 
 const useCart = () => {

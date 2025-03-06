@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import theme from './theme/themeSlice'
-import coin from './coin/coinslice.js'
+import coin from './coin/coinService.js'
 import cart from './cart/cartSlice.js'
 import auth from './auth/AuthSlice.js'
 
